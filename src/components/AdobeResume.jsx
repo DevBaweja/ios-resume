@@ -41,33 +41,33 @@ function AdobeSymbol({ name, className = "w-5 h-5" }) {
 function AdobeHeader() {
   return (
     <div className="bg-gradient-to-r from-red-600 via-purple-600 to-blue-600 text-white">
-      <div className="max-w-6xl mx-auto px-6 py-12">
+      <div className="max-w-6xl mx-auto px-6 py-8">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-5xl font-bold tracking-tight mb-2">Sonali</h1>
-            <p className="text-xl text-white/90 mb-4">iOS Software Engineer</p>
-            <div className="flex flex-wrap gap-3">
-              <a href="mailto:sonali120920@gmail.com" className="flex items-center gap-2 px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg transition-colors">
-                <AdobeSymbol name="email" className="w-4 h-4" />
-                <span className="text-sm">Email</span>
+            <h1 className="text-4xl font-bold tracking-tight mb-1">Sonali</h1>
+            <p className="text-lg text-white/90 mb-3">iOS Software Engineer</p>
+            <div className="flex flex-wrap gap-2">
+              <a href="mailto:sonali120920@gmail.com" className="flex items-center gap-1.5 px-3 py-1.5 bg-white/20 hover:bg-white/30 rounded-lg transition-colors">
+                <AdobeSymbol name="email" className="w-3.5 h-3.5" />
+                <span className="text-xs">Email</span>
               </a>
-              <a href="https://www.linkedin.com/in/sonali-a989a8192/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg transition-colors">
-                <AdobeSymbol name="linkedin" className="w-4 h-4" />
-                <span className="text-sm">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/sonali-a989a8192/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 px-3 py-1.5 bg-white/20 hover:bg-white/30 rounded-lg transition-colors">
+                <AdobeSymbol name="linkedin" className="w-3.5 h-3.5" />
+                <span className="text-xs">LinkedIn</span>
               </a>
-              <a href="https://github.com/Sonali12920/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg transition-colors">
-                <AdobeSymbol name="github" className="w-4 h-4" />
-                <span className="text-sm">GitHub</span>
+              <a href="https://github.com/Sonali12920/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 px-3 py-1.5 bg-white/20 hover:bg-white/30 rounded-lg transition-colors">
+                <AdobeSymbol name="github" className="w-3.5 h-3.5" />
+                <span className="text-xs">GitHub</span>
               </a>
-              <a href="tel:+919667150067" className="flex items-center gap-2 px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg transition-colors">
-                <AdobeSymbol name="phone" className="w-4 h-4" />
-                <span className="text-sm">Call</span>
+              <a href="tel:+919667150067" className="flex items-center gap-1.5 px-3 py-1.5 bg-white/20 hover:bg-white/30 rounded-lg transition-colors">
+                <AdobeSymbol name="phone" className="w-3.5 h-3.5" />
+                <span className="text-xs">Call</span>
               </a>
             </div>
           </div>
           <div className="hidden md:block">
-            <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center">
-              <span className="text-4xl font-bold">S</span>
+            <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center">
+              <span className="text-3xl font-bold">S</span>
             </div>
           </div>
         </div>
@@ -78,8 +78,8 @@ function AdobeHeader() {
 
 function AdobeSection({ title, children }) {
   return (
-    <section className="mb-8">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-red-500 pb-2">{title}</h2>
+    <section className="mb-6">
+      <h2 className="text-xl font-bold text-gray-800 mb-3 border-b-2 border-red-500 pb-1">{title}</h2>
       {children}
     </section>
   );
@@ -87,7 +87,7 @@ function AdobeSection({ title, children }) {
 
 function AdobeCard({ children, className = "" }) {
   return (
-    <div className={`bg-white rounded-lg shadow-lg border border-gray-200 p-6 ${className}`}>
+    <div className={`bg-white rounded-lg shadow-lg border border-gray-200 p-4 ${className}`}>
       {children}
     </div>
   );
@@ -98,24 +98,25 @@ export default function AdobeResume() {
     <div className="min-h-screen bg-gray-50">
       <AdobeHeader />
       
-      <div className="max-w-6xl mx-auto px-6 py-8">
+      <div className="max-w-6xl mx-auto px-6 py-6">
         {/* Summary */}
         <AdobeSection title="Professional Summary">
           <AdobeCard>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed text-base">
               iOS Software Engineer with 3 years of experience delivering scalable, high-performance apps at OYO. Skilled
               in Swift, SwiftUI, and UIKit, with a strong grasp of the full software development lifecycle—from
               problem-solving and architecture to integration, testing, and release. Proven track record of shipping features
-              that enhanced user growth, engagement, and app stability.
+              that enhanced user growth, engagement, and app stability. Eager to take on greater product ownership and
+              contribute to large-scale system design and development.
             </p>
           </AdobeCard>
         </AdobeSection>
 
         {/* Skills */}
         <AdobeSection title="Skills">
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-4">
             <AdobeCard>
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">Programming Languages</h3>
+              <h3 className="text-base font-semibold text-gray-800 mb-2">Programming Languages</h3>
               <div className="flex flex-wrap gap-2">
                 {["Swift", "Objective-C", "C++", "SwiftUI"].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-medium">
@@ -126,7 +127,7 @@ export default function AdobeResume() {
             </AdobeCard>
             
             <AdobeCard>
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">iOS Frameworks & Design Patterns</h3>
+              <h3 className="text-base font-semibold text-gray-800 mb-2">iOS Frameworks & Design Patterns</h3>
               <div className="flex flex-wrap gap-2">
                 {["UIKit", "SwiftUI", "CoreData", "VIPER", "MVVM", "MVC", "Singleton", "Delegate"].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">
@@ -137,7 +138,7 @@ export default function AdobeResume() {
             </AdobeCard>
             
             <AdobeCard>
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">Tools & Platforms</h3>
+              <h3 className="text-base font-semibold text-gray-800 mb-2">Tools & Platforms</h3>
               <div className="flex flex-wrap gap-2">
                 {["Xcode", "Git", "Firebase", "Jira", "Postman", "Sourcetree", "Charles Proxy"].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
@@ -148,7 +149,7 @@ export default function AdobeResume() {
             </AdobeCard>
             
             <AdobeCard>
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">Core Concepts</h3>
+              <h3 className="text-base font-semibold text-gray-800 mb-2">Core Concepts</h3>
               <div className="flex flex-wrap gap-2">
                 {["Object-Oriented Programming (OOP)", "Data Structures & Algorithms", "Operating Systems", "DBMS"].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
@@ -162,21 +163,21 @@ export default function AdobeResume() {
 
         {/* Experience */}
         <AdobeSection title="Work Experience">
-          <div className="space-y-6">
+          <div className="space-y-4">
             <AdobeCard>
-              <div className="flex justify-between items-start mb-4">
+              <div className="flex justify-between items-start mb-3">
                 <div>
-                  <h3 className="text-xl font-bold text-gray-800">Software Development Engineer (iOS)</h3>
-                  <p className="text-lg text-red-600 font-semibold">OYO Rooms</p>
-                  <p className="text-gray-600">Gurugram • Jul 2022 – Present</p>
+                  <h3 className="text-lg font-bold text-gray-800">Software Development Engineer (iOS)</h3>
+                  <p className="text-base text-red-600 font-semibold">OYO Rooms</p>
+                  <p className="text-sm text-gray-600">Gurugram • Jul 2022 – Present</p>
                 </div>
                 <div className="text-right">
-                  <span className="inline-block px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-medium">
+                  <span className="inline-block px-2 py-0.5 bg-red-100 text-red-800 rounded-full text-xs font-medium">
                     Current
                   </span>
                 </div>
               </div>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-1.5 text-gray-700 text-sm leading-relaxed">
                 <li>• Contributed to reducing app build time by over 80% (40 mins → 5 mins) and app size by nearly 50% (212MB → 116MB) by modularizing targets, optimizing assets, and helping eliminate redundant build phases.</li>
                 <li>• Created a unit test build-breaker workflow in CI to enforce minimum test coverage and prevent untested code merges, improving code reliability and reducing regressions by 25%.</li>
                 <li>• Built a centralized Resolver using protocol-oriented design to separate OYO, My6, and Check-In logic within a unified iOS codebase—enhancing modularity and reducing duplicate code by 40%.</li>
@@ -197,14 +198,14 @@ export default function AdobeResume() {
             </AdobeCard>
 
             <AdobeCard>
-              <div className="flex justify-between items-start mb-4">
+              <div className="flex justify-between items-start mb-3">
                 <div>
-                  <h3 className="text-xl font-bold text-gray-800">Software Engineer Intern</h3>
-                  <p className="text-lg text-purple-600 font-semibold">OYO Rooms</p>
-                  <p className="text-gray-600">Gurugram • Jan 2022 – Jul 2022</p>
+                  <h3 className="text-lg font-bold text-gray-800">Software Engineer Intern</h3>
+                  <p className="text-base text-purple-600 font-semibold">OYO Rooms</p>
+                  <p className="text-sm text-gray-600">Gurugram • Jan 2022 – Jul 2022</p>
                 </div>
               </div>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-1.5 text-gray-700 text-sm leading-relaxed">
                 <li>• Contributed to Design 2.0 by revamping the app's UI, improving user experience.</li>
                 <li>• Designed feedback sheets and integrated in-app prompts to enhance booking experience and gather user feedback.</li>
                 <li>• Built a full-stack web application using React for internal job postings management at OYO.</li>
@@ -212,14 +213,14 @@ export default function AdobeResume() {
             </AdobeCard>
 
             <AdobeCard>
-              <div className="flex justify-between items-start mb-4">
+              <div className="flex justify-between items-start mb-3">
                 <div>
-                  <h3 className="text-xl font-bold text-gray-800">Product Intern</h3>
-                  <p className="text-lg text-blue-600 font-semibold">Adobe</p>
-                  <p className="text-gray-600">Noida • May 2021 – Aug 2021</p>
+                  <h3 className="text-lg font-bold text-gray-800">Product Intern</h3>
+                  <p className="text-base text-blue-600 font-semibold">Adobe</p>
+                  <p className="text-sm text-gray-600">Noida • May 2021 – Aug 2021</p>
                 </div>
               </div>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-1.5 text-gray-700 text-sm leading-relaxed">
                 <li>• Collaborated with CCX Team to add color effects to video frames and make the RUSH web features available for video editing.</li>
               </ul>
             </AdobeCard>
@@ -231,13 +232,13 @@ export default function AdobeResume() {
           <AdobeCard>
             <div className="flex justify-between items-start">
               <div>
-                <h3 className="text-xl font-bold text-gray-800">Indira Gandhi Delhi Technical University for Women</h3>
-                <p className="text-lg text-gray-600">Delhi, India</p>
-                <p className="text-gray-700">BTech, Information Technology • 2018-2022</p>
+                <h3 className="text-lg font-bold text-gray-800">Indira Gandhi Delhi Technical University for Women</h3>
+                <p className="text-base text-gray-600">Delhi, India</p>
+                <p className="text-sm text-gray-700">BTech, Information Technology • 2018-2022</p>
               </div>
               <div className="text-right">
-                <div className="text-2xl font-bold text-green-600">80.63%</div>
-                <div className="text-sm text-gray-600">Aggregate</div>
+                <div className="text-sm font-medium text-gray-700">80.63%</div>
+                <div className="text-xs text-gray-500">Aggregate</div>
               </div>
             </div>
           </AdobeCard>

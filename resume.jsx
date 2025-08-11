@@ -184,7 +184,8 @@ export default function App() {
                           iOS Software Engineer with 3 years of experience delivering scalable, high-performance apps at OYO. Skilled
                           in Swift, SwiftUI, and UIKit, with a strong grasp of the full software development lifecycle—from
                           problem-solving and architecture to integration, testing, and release. Proven track record of shipping features
-                          that enhanced user growth, engagement, and app stability.
+                          that enhanced user growth, engagement, and app stability. Eager to take on greater product ownership and
+                          contribute to large-scale system design and development.
                         </p>
                       </Cell>
                     </div>
