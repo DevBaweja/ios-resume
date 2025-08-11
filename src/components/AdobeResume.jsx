@@ -128,7 +128,7 @@ export default function AdobeResume() {
             <AdobeCard>
               <h3 className="text-lg font-semibold text-gray-800 mb-3">iOS Frameworks & Design Patterns</h3>
               <div className="flex flex-wrap gap-2">
-                {["UIKit", "SwiftUI", "CoreData", "VIPER", "MVVM", "MVC"].map((skill) => (
+                {["UIKit", "SwiftUI", "CoreData", "VIPER", "MVVM", "MVC", "Singleton", "Delegate"].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">
                     {skill}
                   </span>
@@ -139,7 +139,7 @@ export default function AdobeResume() {
             <AdobeCard>
               <h3 className="text-lg font-semibold text-gray-800 mb-3">Tools & Platforms</h3>
               <div className="flex flex-wrap gap-2">
-                {["Xcode", "Git", "Firebase", "Jira", "Postman"].map((skill) => (
+                {["Xcode", "Git", "Firebase", "Jira", "Postman", "Sourcetree", "Charles Proxy"].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
                     {skill}
                   </span>
@@ -150,7 +150,7 @@ export default function AdobeResume() {
             <AdobeCard>
               <h3 className="text-lg font-semibold text-gray-800 mb-3">Core Concepts</h3>
               <div className="flex flex-wrap gap-2">
-                {["OOP", "Data Structures", "Algorithms", "Operating Systems", "DBMS"].map((skill) => (
+                {["Object-Oriented Programming (OOP)", "Data Structures & Algorithms", "Operating Systems", "DBMS"].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
                     {skill}
                   </span>
@@ -176,26 +176,24 @@ export default function AdobeResume() {
                   </span>
                 </div>
               </div>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Key Achievements:</h4>
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    <li>• Reduced app build time by 80% (40 mins → 5 mins)</li>
-                    <li>• Decreased app size by 50% (212MB → 116MB)</li>
-                    <li>• Improved crash-free user rate from 99.86% to 99.93%</li>
-                    <li>• Enhanced user engagement by 22%</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Technical Contributions:</h4>
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    <li>• Built centralized Resolver reducing code by 40%</li>
-                    <li>• Created CI workflow reducing regressions by 25%</li>
-                    <li>• Developed complete authentication system</li>
-                    <li>• Mentored 4 iOS interns</li>
-                  </ul>
-                </div>
-              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li>• Contributed to reducing app build time by over 80% (40 mins → 5 mins) and app size by nearly 50% (212MB → 116MB) by modularizing targets, optimizing assets, and helping eliminate redundant build phases.</li>
+                <li>• Created a unit test build-breaker workflow in CI to enforce minimum test coverage and prevent untested code merges, improving code reliability and reducing regressions by 25%.</li>
+                <li>• Built a centralized Resolver using protocol-oriented design to separate OYO, My6, and Check-In logic within a unified iOS codebase—enhancing modularity and reducing duplicate code by 40%.</li>
+                <li>• Developed complete authentication for Check-In app (email, guest, OAuth) and gallery view in SwiftUI, ensuring a secure and consistent UX.</li>
+                <li>• Built My6 app's login and listing UI, improving reliability and boosting user retention.</li>
+                <li>• Created a multimedia SOB landing page with circular stories and videos, enhancing booking journey and increasing feature interaction time by 22%.</li>
+                <li>• Optimized homepage widgets using deep linking and caching, improving load time by 35% and boosting personalization-based engagement.</li>
+                <li>• Built dynamic filter system separating supported/unsupported filters, improving response time by 40% and reducing backend errors.</li>
+                <li>• Launched quick check-in campaigns and deep links, contributing to a 12% spike in bookings during key periods.</li>
+                <li>• Migrated app from Xcode 14 to 15 and implemented privacy manifest, achieving 100% App Store compliance.</li>
+                <li>• Integrated Belvilla OVH with deep linking and login support, increasing Belvilla DAU by 13–15%.</li>
+                <li>• Revamped search with City Tiles and locality filters, boosting conversions by 12%.</li>
+                <li>• Implemented pre/post-tax price visibility, aligning with MMT/Agoda and driving 8% DAU growth.</li>
+                <li>• Resolved key crashes via systematic analysis, raising crash-free user rate from 99.86% to 99.93%.</li>
+                <li>• Added detailed event tracking across flows, enabling granular product analytics and experimentation.</li>
+                <li>• Mentored 4 iOS interns and led campus technical interviews, accelerating onboarding and strengthening hiring pipeline.</li>
+              </ul>
             </AdobeCard>
 
             <AdobeCard>
@@ -207,9 +205,9 @@ export default function AdobeResume() {
                 </div>
               </div>
               <ul className="space-y-2 text-gray-700">
-                <li>• Contributed to Design 2.0 by revamping the app's UI</li>
-                <li>• Designed feedback sheets and integrated in-app prompts</li>
-                <li>• Built full-stack web application using React</li>
+                <li>• Contributed to Design 2.0 by revamping the app's UI, improving user experience.</li>
+                <li>• Designed feedback sheets and integrated in-app prompts to enhance booking experience and gather user feedback.</li>
+                <li>• Built a full-stack web application using React for internal job postings management at OYO.</li>
               </ul>
             </AdobeCard>
 
@@ -222,8 +220,7 @@ export default function AdobeResume() {
                 </div>
               </div>
               <ul className="space-y-2 text-gray-700">
-                <li>• Collaborated with CCX Team to add color effects to video frames</li>
-                <li>• Made RUSH web features available for video editing</li>
+                <li>• Collaborated with CCX Team to add color effects to video frames and make the RUSH web features available for video editing.</li>
               </ul>
             </AdobeCard>
           </div>
